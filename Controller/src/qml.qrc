@@ -7,5 +7,11 @@
         <file>image/warn1.png</file>
         <file>image/weather.png</file>
         <file>image/weather1.png</file>
+        <file>image/turn_left.png</file>
+        <file>image/turn_right.png</file>
+        <file>image/MapIcon.png</file>
+        <file>image/mc.png</file>
+        <file>image/start_on.png</file>
+        <file>image/soff.png</file>
     </qresource>
 </RCC>

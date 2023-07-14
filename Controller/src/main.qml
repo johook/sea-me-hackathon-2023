@@ -60,6 +60,8 @@ ApplicationWindow {
         anchors.centerIn: parent
     }
 
+
+
     Column {
         id: orderButtons
         anchors.centerIn: parent
@@ -172,36 +174,86 @@ ApplicationWindow {
                 verticalAlignment: Text.AlignVCenter
             }
         }
+//        Button {
+//            id: buttonJ
+//            text: "J"
+//            onClicked: {
+//                buttons.adjustButtons("J");
+//                clickedButton = "J";
+//            }
+//            width: 100
+//            height: 100
+//            font.pixelSize: 40
+//            font.bold: true
+//            background: Rectangle {
+//                gradient: Gradient {
+//                    GradientStop { position: 0.0; color: "black" }
+//                    GradientStop { position: 1.0; color: "gray" }
+//                }
+//            }
+//            contentItem: Text {
+//                text: buttonJ.text
+//                color: clickedButton === "J" ? "red" : "white"
+//                font.bold: true
+//                font.pointSize: 40
+//                horizontalAlignment: Text.AlignHCenter
+//                verticalAlignment: Text.AlignVCenter
+//            }
+//        }
     }
+//    Button {
+//        id: buttonWeather
+//        property bool isToggled: false
+//        x: 354
+//        y: 826 // Add this line
+
+//        onClicked: {
+//            buttons.adjustButtons("Weather");
+//            isToggled = !isToggled; // This line toggles the state
+//        }
+//        width: 100
+//        height: 100
+
+//        contentItem: Image {
+//            id: weatherImage
+//            width: 100
+//            height: 100
+//            source: buttonWeather.isToggled ? "image/weather1.png" : "image/weather.png" // Use the state here
+//        }
+
+//        background: Rectangle {
+//            color: "transparent"
+//        }
+//    }
     Button {
-        id: buttonWeather
-        property bool isToggled: false
-        x: 354
-        y: 826 // Add this line
+            id: buttonstart
+            property bool isToggled: false
+            x: 830
+            y: 70 // Add this line
 
-        onClicked: {
-            buttons.adjustButtons("Weather");
-            isToggled = !isToggled; // This line toggles the state
-        }
-        width: 100
-        height: 100
+            onClicked: {
+                buttons.adjustButtons("Start");
+                isToggled = !isToggled; // This line toggles the state
+            }
+            width: 200
+            height: 120
 
-        contentItem: Image {
-            id: weatherImage
-            width: 100
-            height: 100
-            source: buttonWeather.isToggled ? "image/weather1.png" : "image/weather.png" // Use the state here
-        }
+            contentItem: Image {
+                id: startImage
+                width: 100
+                height: 100
+                source: buttonstart.isToggled ? "image/start_on.png": "image/soff.png"  // Use the state here
+            }
 
-        background: Rectangle {
-            color: "transparent"
+            background: Rectangle {
+                color: "transparent"
+            }
         }
-    }
     Button {
         id: buttonWarn
         property bool isToggled: false
-        x: 590
-        y: 826 // Add this line
+        x: 870
+        y: 860 // Add this line
 
         onClicked: {
             buttons.adjustButtons("Warn");
@@ -222,10 +274,59 @@ ApplicationWindow {
         }
     }
     Button {
+        id: buttonLeft
+        property bool isToggled: false
+        x: 418
+        y: 860 // Add this line
+
+        onClicked: {
+            buttons.adjustButtons("Left");
+            isToggled = !isToggled; // This line toggles the state
+        }
+        width: 100
+        height: 100
+
+        contentItem: Image {
+            id: leftImage
+            width: 100
+            height: 100
+            source: "image/turn_left.png"
+        }
+
+        background: Rectangle {
+            color: "transparent"
+        }
+    }
+    Button {
+        id: buttonRight
+        property bool isToggled: false
+        x: 1315
+        y: 860 // Add this line
+
+        onClicked: {
+            buttons.adjustButtons("Right");
+            isToggled = !isToggled; // This line toggles the state
+        }
+        width: 100
+        height: 100
+
+        contentItem: Image {
+            id: rightImage
+            width: 100
+            height: 100
+            source: "image/turn_right.png"
+        }
+
+        background: Rectangle {
+            color: "transparent"
+        }
+    }
+
+    Button {
         id: buttonLight
         property bool isToggled: false
-        x: 771
-        y: 816 // Add this line
+        x: 1056
+        y: 860 // Add this line
 
         onClicked: {
             buttons.adjustButtons("Light");
@@ -245,10 +346,58 @@ ApplicationWindow {
             color: "transparent"
         }
     }
+    Button {
+        id: buttonMap
+        property bool isToggled: false
+        x: 635
+        y: 860 // Add this line
+
+        onClicked: {
+            buttons.adjustButtons("naver");
+            isToggled = !isToggled; // This line toggles the state
+        }
+        width: 100
+        height: 100
+
+        contentItem: Image {
+            id: mapImage
+            width: 100
+            height: 100
+            source: "image/MapIcon.png"
+        }
+
+        background: Rectangle {
+            color: "transparent"
+        }
+    }
+//    Button {
+//            id: buttonMc
+//            property bool isToggled: false
+//            x: 354
+//            y: 650 // Add this line
+
+//            onClicked: {
+//                buttons.adjustButtons("Mc");
+//                isToggled = !isToggled; // This line toggles the state
+//            }
+//            width: 100
+//            height: 100
+
+//            contentItem: Image {
+//                id: mcImage
+//                width: 100
+//                height: 100
+//                source: "image/mc.png" // Use the state here
+//            }
+
+//            background: Rectangle {
+//                color: "transparent"
+//            }
+//        }
 
     Text {
         id: text1
-        x: 350
+        x: 633
         y: 91
         text: qsTr("Speed")
         font.bold: true
@@ -257,10 +406,19 @@ ApplicationWindow {
 
     Text {
         id: text2
-        x: 831
+        x: 1120
         y: 91
         text: qsTr("RPM")
         font.bold: true
         font.pixelSize: 36
     }
+
+
+
+
+
 }
+
+
+
+

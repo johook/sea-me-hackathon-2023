@@ -10,6 +10,8 @@ WeatherAPI::WeatherAPI(QObject *parent) : QObject(parent)
 
     connect(networkManager, &QNetworkAccessManager::finished,
             this, &WeatherAPI::onWeatherDataReceived);
+    QString defaultCity = "Seoul";
+    requestWeather(defaultCity);
 }
 
 void WeatherAPI::requestWeather(const QString &city)

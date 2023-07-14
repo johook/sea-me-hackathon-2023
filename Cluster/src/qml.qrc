@@ -8,5 +8,19 @@
         <file>image/star.png</file>
         <file>image/volk.png</file>
         <file>image/warning.png</file>
+        <file>image/pngegg.png</file>
+        <file>image/backcar.png</file>
+        <file>image/logo.png</file>
+        <file>image/back1.png</file>
+        <file>image/speedmachine.png</file>
+        <file>image/bg-mask.png</file>
+        <file>image/car-highlights.png</file>
+        <file>image/warningleft.png</file>
+        <file>image/fuel.png</file>
+        <file>image/fuelb.png</file>
+        <file>image/arrow0.png</file>
+        <file>image/arrow90.png</file>
+        <file>image/empty.png</file>
+        <file>image/empty.jpg</file>
     </qresource>
 </RCC>

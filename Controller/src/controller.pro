@@ -67,3 +67,8 @@ HEADERS += \
     Speed.h \
     RPM.h \
     Buttons.h
+
+DISTFILES += \
+    main.qml
+
+FORMS +=
